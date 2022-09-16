@@ -31,6 +31,12 @@ export default {
             {
               name: "Rio de Janeiro",
             },
+            {
+              name: "Campos do Jordão",
+            },
+            {
+              name: "Caçapava",
+            },
           ],
         },
         {
@@ -38,7 +44,10 @@ export default {
 
           destinos: [
             {
-              name: "Rio de Janeiro",
+              name: "Taubaté",
+            },
+            {
+              name: "Ubatuba",
             },
           ],
         },
