@@ -2,7 +2,7 @@
   <button
     class="b-button"
     :class="{
-      'b-button--color-secondary': true,
+      [`b-button--color-${color}`]: true,
     }"
   >
     <slot />
@@ -10,7 +10,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    color: {
+      type: String,
+      default: "primary",
+    },
+  },
+};
 </script>
 
 <style>
