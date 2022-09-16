@@ -2,7 +2,11 @@
   <div>
     <AppHeader />
     <AppMain />
-    <TravelSection title="Pacotes de viagens saindo de São Paulo"/>
+    <TravelSection
+      v-for="(cidade, index) in cidades"
+      :key="index"
+      :title="`Pacotes de viagens saindo de ${cidade.name}`"
+    />
   </div>
 </template>
 
@@ -16,7 +20,31 @@ export default {
     AppMain,
     AppHeader,
     TravelSection,
-},
+  },
+  data() {
+    return {
+      cidades: [
+        {
+          name: "São Paulo",
+
+          destinos: [
+            {
+              name: "Rio de Janeiro",
+            },
+          ],
+        },
+        {
+          name: "Rio de Janeiro",
+
+          destinos: [
+            {
+              name: "Rio de Janeiro",
+            },
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 

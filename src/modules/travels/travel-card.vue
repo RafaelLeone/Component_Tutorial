@@ -6,12 +6,11 @@
         src="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
       />
       <div class="travel-card--body">
-        <h3 class="travel-card--title">Rio de Janeiro</h3>
+        <h3 class="travel-card--title">{{ title }}</h3>
         <ul class="travel-card--description">
-          <li>diarias</li>
-          <li>diarias</li>
-          <li>diarias</li>
-          <li>diarias</li>
+          <li v-for="(category, index) in categories" :key="index">
+            {{ category }}
+          </li>
         </ul>
         <BButton color="secondary">Meu botão</BButton>
         <BButton block>Meu botão 2</BButton>
@@ -23,6 +22,20 @@
 <script>
 import BCard from "@/components/ui/atoms/b-card.vue";
 export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    categories: {
+      type: Array,
+      required: true,
+    },
+    image: {
+      type: String,
+      required: true,
+    },
+  },
   components: {
     BCard,
   },
