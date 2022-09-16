@@ -38,9 +38,12 @@ export default {
 .travel-card--body {
 }
 .travel-card--title {
+  text-align: left;
+  margin-left: 16px;
   font-size: 19px;
 }
 .travel-card--description {
+  text-align: left;
   font-size: 12px;
 }
 </style>
