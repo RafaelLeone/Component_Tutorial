@@ -2,7 +2,7 @@
   <div>
     <AppHeader />
     <AppMain />
-    <TravelSection />
+    <TravelSection title="Pacotes de viagens saindo de São Paulo"/>
   </div>
 </template>
 
