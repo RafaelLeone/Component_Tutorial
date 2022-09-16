@@ -6,6 +6,7 @@
       v-for="(cidade, index) in cidades"
       :key="index"
       :title="`Pacotes de viagens saindo de ${cidade.name}`"
+      :cidades="cidade.destinos"
     />
   </div>
 </template>
@@ -48,6 +49,18 @@ export default {
             },
             {
               name: "Ubatuba",
+            },
+          ],
+        },
+        {
+          name: "Pernambuco",
+
+          destinos: [
+            {
+              name: "Taubaté",
+            },
+            {
+              name: "Caraguatatuba",
             },
           ],
         },

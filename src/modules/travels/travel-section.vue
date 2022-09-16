@@ -3,17 +3,9 @@
     <h2 class="travel-section--title">{{ title }}</h2>
     <div class="travel-section--grid">
       <TravelCard
-        title="Rio de Janeiro"
-        :categories="['2 diárias', 'Blah da Silva']"
-        image="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
-      />
-      <TravelCard
-        title="Rio de Janeiro"
-        :categories="['2 diárias', 'Blah da Silva']"
-        image="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
-      />
-      <TravelCard
-        title="Rio de Janeiro"
+        v-for="(destino, index) in cidades"
+        :key="index"
+        :title="destino.name"
         :categories="['2 diárias', 'Blah da Silva']"
         image="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
       />
@@ -31,6 +23,10 @@ export default {
   props: {
     title: {
       type: String,
+      required: true,
+    },
+    cidades: {
+      type: Array,
       required: true,
     },
   },
