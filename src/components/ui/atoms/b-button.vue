@@ -3,6 +3,7 @@
     class="b-button"
     :class="{
       [`b-button--color-${color}`]: true,
+      [`b-button--behavior-block`]: block,
     }"
   >
     <slot />
@@ -15,6 +16,10 @@ export default {
     color: {
       type: String,
       default: "primary",
+    },
+    block: {
+      type: Boolean,
+      default: false,
     },
   },
 };
@@ -40,5 +45,8 @@ export default {
 }
 .b-button--color-secondary {
   background-color: rgb(136, 2, 214);
+}
+.b-button--behavior-block {
+  width: 100%;
 }
 </style>

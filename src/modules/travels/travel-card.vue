@@ -1,7 +1,7 @@
 <template>
   <div>
       <BButton color="secondary">Meu botão</BButton>
-      <BButton>Meu botão 2</BButton>
+      <BButton block>Meu botão 2</BButton>
   </div>
 </template>
 
