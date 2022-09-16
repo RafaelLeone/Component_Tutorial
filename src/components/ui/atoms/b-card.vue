@@ -13,5 +13,6 @@ export default {};
   border: 1px solid rgb(163, 186, 198);
   padding: 16px;
   border-radius: 14px;
+  overflow: hidden;
 }
 </style>

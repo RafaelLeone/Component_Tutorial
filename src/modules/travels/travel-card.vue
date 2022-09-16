@@ -1,8 +1,21 @@
 <template>
   <div>
     <BCard>
-      <BButton color="secondary">Meu botão</BButton>
-      <BButton block>Meu botão 2</BButton>
+      <img
+        class="travel-card--image"
+        src="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
+      />
+      <div class="travel-card--body">
+        <h3 class="travel-card--title">Rio de Janeiro</h3>
+        <ul class="travel-card--description">
+          <li>diarias</li>
+          <li>diarias</li>
+          <li>diarias</li>
+          <li>diarias</li>
+        </ul>
+        <BButton color="secondary">Meu botão</BButton>
+        <BButton block>Meu botão 2</BButton>
+      </div>
     </BCard>
   </div>
 </template>
@@ -16,4 +29,18 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.travel-card--image {
+  margin: calc(-1 * 16px);
+  width: calc(100% + 16px * 2);
+  margin-bottom: 24px;
+}
+.travel-card--body {
+}
+.travel-card--title {
+  font-size: 19px;
+}
+.travel-card--description {
+  font-size: 12px;
+}
+</style>

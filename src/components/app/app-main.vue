@@ -11,7 +11,7 @@ export default {};
 <style>
 .app-main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding: 24px;
