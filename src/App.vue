@@ -1,23 +1,17 @@
 <template>
   <div id="app">
-    <AppHeader />
-    <AppMain />
-    <TravelCard />
+    <HomePage />
   </div>
 </template>
 
 <script>
-import AppMain from "./components/app/app-main.vue";
-import AppHeader from "./components/app/app-header.vue";
-import TravelCard from "./modules/travels/travel-card.vue";
+import HomePage from "./pages/home-page.vue";
 
 export default {
   name: "App",
   components: {
-    AppMain,
-    AppHeader,
-    TravelCard,
-  },
+    HomePage,
+},
 };
 </script>
 

@@ -1,9 +1,18 @@
 <template>
-  <main>main</main>
+  <main class="app-main">
+    <slot />
+  </main>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style scoped></style>
+<style>
+.app-main {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
