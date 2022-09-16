@@ -2,18 +2,21 @@
   <div id="app">
     <AppHeader />
     <AppMain />
+    <TravelCard />
   </div>
 </template>
 
 <script>
-import AppMain from "./components/app-main.vue";
-import AppHeader from "./components/app-header.vue";
+import AppMain from "./components/app/app-main.vue";
+import AppHeader from "./components/app/app-header.vue";
+import TravelCard from "./modules/travels/travel-card.vue";
 
 export default {
   name: "App",
   components: {
     AppMain,
     AppHeader,
+    TravelCard,
   },
 };
 </script>
