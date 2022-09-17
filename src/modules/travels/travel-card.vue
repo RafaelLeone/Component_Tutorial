@@ -3,7 +3,7 @@
     <BCard>
       <img
         class="travel-card--image"
-        src="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
+        :src="image"
       />
       <div class="travel-card--body">
         <h3 class="travel-card--title">{{ title }}</h3>

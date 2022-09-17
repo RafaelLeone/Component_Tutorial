@@ -7,7 +7,7 @@
         :key="index"
         :title="destino.name"
         :categories="['2 diárias', 'Blah da Silva']"
-        image="https://cdn.greatsoftwares.com.br/arquivos/paginas_publicadas/gp.buser.com.br-pacotes/imagens/mobile/1661797641-8266086-4280-39b9fd009b6bb73ccecd1a45df6d4c7a.jpg"
+        :image="destino.image"
       />
     </div>
   </div>
