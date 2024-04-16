@@ -1,4 +1,4 @@
-# buserpacotes
+# Component Tutorial
 
 ## Project setup
 ```
